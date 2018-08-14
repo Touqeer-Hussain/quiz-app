@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./assets/icon/web.ico">
+
+    <title>Quiz App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark d-flex">
+        <a class="navbar-brand p-2" style="font-size: 30px;" href="#">Quiz App</a>
+        <a class="navbar-brand p-2" style="font-size: 20px;" id="user" href="#"></a>
+        <button class="navbar-brand btn btn-warning ml-sm-auto" onclick="window.location.replace('./quiz.html');">Return to Quiz</button>
+        <button class="btn btn-success ml-2 p-2" onclick="logout();" >Log Out</button>
+      </nav>
+    </header>
+    <!-- Begin page content -->
+    <main role="main" class="container" style="margin-top: 180px">
+        <div class="alert alert-success" role="alert" id="pass" hidden>
+            <h4 class="alert-heading">Well done! <span id="puser"></span></h4>
+            <p>You have passed the quiz with <span id="pperct"></span> percentage!!</p>
+            <hr>
+            <p class="mb-0">You scored <span id="pscore"></span> out of <span id="ptotal"></span>.</p>
+          </div>
+          <div class="alert alert-danger" role="alert" id="fail" hidden>
+            <h4 class="alert-heading">Sorry! <span class="fuserR"></span></h4>
+            <p>You have failed the quiz with <span id="fperct"></span> percentage!!</p>
+            <hr>
+            <p class="mb-0">You scored <span id="fscore"></span> out of <span id="ftotal"></span>.</p>
+          </div>
+
+          <table class="table w-100">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Answer</th>
+                <th scope="col">Remark</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="r0">
+                <th scope="row">1</th>
+                <td id="tans0"></td>
+                <td id="rans0"></td>
+              </tr>
+              <tr id="r1">
+                <th scope="row">2</th>
+                <td id="tans1"></td>
+                <td id="rans1"></td>
+              </tr>
+              <tr id="r2">
+                <th scope="row">3</th>
+                <td id="tans2"></td>
+                <td id="rans2"></td>
+              </tr>
+              <tr id="r3">
+                <th scope="row">4</th>
+                <td id="tans3"></td>
+                <td id="rans3"></td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </main>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>

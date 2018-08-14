@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./assets/icon/web.ico">
+
+    <title>Quiz App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+        
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark d-flex">
+        <a class="navbar-brand p-2" style="font-size: 30px;" href="#">Quiz App</a>
+        <a class="navbar-brand p-2" style="font-size: 20px;" href="#" id="user" ></a>
+        <a class="navbar-brand ml-sm-auto" style="font-size: 20px; color:rgb(73, 173, 255)" href="#" id="timec" ></a>
+        <button class="btn btn-success ml-2 p-2" onclick="logout();" >Log Out</button>
+        </nav> 
+    </header>
+    <!-- Begin page content -->
+    <main role="main" class="container" style="margin-top: 180px">
+        <div class="col-sm-8 mid">
+        <h4>Question: 1</h4>
+        <p class="question" id="question1-1"></p>
+        <div class="q1ans d-flex flex-column">
+        <span class="mcqSpan"><input type="radio" id="ans1-1" name="answer1-1" class="a1 custom-radio answer m-sm-2"><span class="label" id="ans1-1text"></span></span>
+        <span class="mcqSpan"><input type="radio" id="ans1-2" name="answer1-1" class="a1 custom-radio answer m-sm-2"><span class="label" id="ans1-2text"></span></span>
+        <span class="mcqSpan"><input type="radio" id="ans1-3" name="answer1-1" class="a1 custom-radio answer m-sm-2"><span class="label" id="ans1-3text"></span></span>
+        <span class="mcqSpan"><input type="radio" id="ans1-4" name="answer1-1" class="a1 custom-radio answer m-sm-2"><span class="label" id="ans1-4text"></span></span>
+        </div>
+        <br><br>
+        <h4>Question: 2</h4>
+        <p class="question" id="question2-1"></p>
+        <div class="q2ans d-flex flex-column">
+        <span class="mcqSpan"><input type="radio" id="ans2-1" name="answer2-1" class="a2 custom-radio answer m-sm-2"><span class="label" id="ans2-1text"></span></span>
+        <span class="mcqSpan"><input type="radio" id="ans2-2" name="answer2-1" class="a2 custom-radio answer m-sm-2"><span class="label" id="ans2-2text"></span></span>
+        <span class="mcqSpan"><input type="radio" id="ans2-3" name="answer2-1" class="a2 custom-radio answer m-sm-2"><span class="label" id="ans2-3text"></span></span>
+        <span class="mcqSpan"><input type="radio" id="ans2-4" name="answer2-1" class="a2 custom-radio answer m-sm-2"><span class="label" id="ans2-4text"></span></span>
+        </div>
+        <br><br>
+        <h4>Question: 3</h4>
+        <p class="question" id="question3-1"></p>
+        <div class="q3ans d-flex flex-column">
+        <span class="mcqSpan"><input type="radio" id="ans3-1" name="answer3-1" class="a3 custom-radio answer m-sm-2"><span class="label" id="ans3-1text"></span></span>
+        <span class="mcqSpan"><input type="radio" id="ans3-2" name="answer3-1" class="a3 custom-radio answer m-sm-2"><span class="label" id="ans3-2text"></span></span>
+        <span class="mcqSpan"><input type="radio" id="ans3-3" name="answer3-1" class="a3 custom-radio answer m-sm-2"><span class="label" id="ans3-3text"></span></span>
+        <span class="mcqSpan"><input type="radio" id="ans3-4" name="answer3-1" class="a3 custom-radio answer m-sm-2"><span class="label" id="ans3-4text"></span></span>
+        </div>
+        <br><br>
+        <h4>Question: 4</h4>
+        <p class="question" id="question4-1"></p>
+        <div class="q4ans d-flex flex-column">
+        <span class="mcqSpan"><input type="radio" id="ans4-1" name="answer4-1" class="a4 custom-radio answer m-sm-2"><span class="label" id="ans4-1text"></span></span>
+        <span class="mcqSpan"><input type="radio" id="ans4-2" name="answer4-1" class="a4 custom-radio answer m-sm-2"><span class="label" id="ans4-2text"></span></span>
+        <span class="mcqSpan"><input type="radio" id="ans4-3" name="answer4-1" class="a4 custom-radio answer m-sm-2"><span class="label" id="ans4-3text"></span></span>
+        <span class="mcqSpan"><input type="radio" id="ans4-4" name="answer4-1" class="a4 custom-radio answer m-sm-2"><span class="label" id="ans4-4text"></span></span>
+        </div>
+
+        <button class="btn btn-primary btn-lg active float-right" style="margin-top: 50px; margin-bottom: 20px;" aria-pressed="true" onclick="getval1(query1);
+        getval2(query2);
+        getval3(query3);
+        getval4(query4);
+        page();
+        ">Submit</button>
+
+        
+    </div>
+        </main>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* Index.html page */
+#passkey{
+    padding: 0px 0px 0px 0px;
+}
+input:required:valid {
+    border: 1px solid rgb(0, 199, 0);
+}
+
+.mcqSpan{
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 6px;
+    margin: 4px 0px 4px 0px;
+    background-color: rgb(234, 252, 255); 
+}
+#perct, #score, #total{
+    font-weight: bold;
+}
+.table{
+    border: 1px solid #212529;
+}
